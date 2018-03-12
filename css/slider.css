@@ -1,0 +1,102 @@
+/* Slider */
+.slider {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.slider .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    color: #c9bea7;
+    text-align: center;
+    text-transform: uppercase;
+}
+.slider .slides {
+    position: relative;
+    margin: 0 -15px;
+}
+.slider .slides .slide {
+    padding: 0 15px;
+}
+@media only screen and (max-width: 64em) {
+    .slider .slides {
+        margin: 0;
+    }
+    .slider .slides .slide {
+        padding: 0;
+    }
+}
+.slider .slides .slide img {
+    display: block;
+    width: 100%;
+    max-width: 510px;
+    margin: auto;
+}
+.slider .slides .slide .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    color: #c74d28;
+    margin: 10px auto;
+    max-width: 510px;
+}
+
+.slider .slides .arrow-cont { 
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 9;
+}
+.slider .slides .slick-prev,
+.slider .slides .slick-next {
+    position: absolute;
+    top: 50%;    
+    z-index: 1;
+    width: 40px;
+    height: 40px;    
+    transform: translateY(-50%);
+}
+.slider .slides .slick-prev {
+    left: 0;
+}
+.slider .slides .slick-next { right: 0; }
+
+@media only screen and (max-width: 1180px) {
+    .slider .slides .slick-prev {
+        left: 5px;
+    }
+}
+@media only screen and (max-width: 64em) {
+    .slider .slides .slick-prev {
+        left: 0;
+    }
+}
+@media only screen and (max-width: 40em) {
+    .slider .slides .slick-prev {
+        left: -10px;
+    }
+}
+@media only screen and (max-width: 1180px) {
+    .slider .slides .slick-next {
+        right: 5px;
+    }
+}
+@media only screen and (max-width: 64em) {
+    .slider .slides .slick-next {
+        right: 0;
+    }
+}
+@media only screen and (max-width: 40em) {
+    .slider .slides .slick-next {
+        right: -10px;
+    }
+}
+.slider .slides .slick-prev:before,
+.slider .slides .slick-next:before {
+    content: none;
+}

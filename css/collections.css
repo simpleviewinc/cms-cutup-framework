@@ -1,0 +1,200 @@
+/* Image Box */
+.imagebox {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.imagebox img {
+	display: block;
+	width: 100%;
+}
+.imagebox .link {
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	width: 100%;
+}
+.imagebox a {
+	display: block;
+	padding: 0;	
+	text-align: center;
+}
+.imagebox a .title {
+	font-size: 18px;
+	line-height: 38px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.imagebox a .desc {
+	font-size: 14px;
+	color: #343433;
+}
+@media only screen and (max-width: 64em) {
+	.imagebox {
+		max-width: 480px;
+	}
+}
+
+/* Image Box Float Image Left of Content */
+.imagebox-float {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.imagebox-float .img-cont,
+.imagebox-float .content {
+	float: left;
+	display: block;
+	box-sizing: border-box;
+}
+.imagebox-float .img-cont {}
+.imagebox-float .content { padding-left: 20px; }
+.imagebox-float .title {
+	font-size: 18px;
+	line-height: 38px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.imagebox-float .desc {
+	font-size: 14px;
+	color: #343433;
+}
+.imagebox-float .desc a.link {
+	display: inline-block;
+}
+@media only screen and (max-width: 40em) {
+	.imagebox-float { text-align: center; }
+	.imagebox-float .content { padding-left: 0px; }
+}
+
+/* Image Box Wide - floated title */
+.imagebox-wide {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.imagebox-wide .title {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	display: block;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px 20px;
+}
+.imagebox-wide a .title {	
+	color: #fff;
+	font-size: 21px;
+	font-weight: 900;	
+}
+@media only screen and (max-width: 40em) {
+	.imagebox-wide a .title { font-size: 14px; }
+}
+
+/* Image Box Slider */
+.imagebox-slider {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.imagebox-slider .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    color: #c9bea7;
+    text-align: center;
+    text-transform: uppercase;
+}
+.imagebox-slider .slides {
+    position: relative;
+    margin: 0 -15px;
+}
+.imagebox-slider .slides .slide {
+    padding: 0 15px;
+}
+.imagebox-slider .slides .slide img {
+    display: block;
+    width: 100%;
+    max-width: 510px;
+    margin: auto;
+}
+.imagebox-slider .slides .slide .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    color: #c74d28;
+    margin: 10px auto;
+    max-width: 510px;
+}
+.imagebox-slider .slides .slide .desc { text-align: center; }
+
+.imagebox-slider .slides .arrow-cont { 
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 9;
+}
+.imagebox-slider .slides .slick-prev,
+.imagebox-slider .slides .slick-next {
+    position: absolute;
+    top: 50%;    
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;    
+    transform: translateY(-50%);
+    text-align: left;
+    color: #ce5323;
+}
+.imagebox-slider .slides .slick-prev { left: -15px; }
+.imagebox-slider .slides .slick-next { 
+    right: -15px; 
+    text-align: right;
+}
+
+.imagebox-slider .slides .slick-prev:before,
+.imagebox-slider .slides .slick-next:before {
+    content: none;
+}
+
+@media only screen and (max-width: 1180px) {
+    .imagebox-slider .slides .slick-prev {
+        left: -10px;
+    }
+    .imagebox-slider .slides .slick-next {
+        right: -10px;
+    }
+}
+@media only screen and (max-width: 64em) {
+	.imagebox-slider .slides {
+        margin: 0;
+    }
+    .imagebox-slider .slides .slide {
+        padding: 0;
+    }
+    .imagebox-slider .slides .slick-prev {
+        left: 0;
+    }
+    .imagebox-slider .slides .slick-next {
+        right: 0;
+    }
+}
+@media only screen and (max-width: 40em) {
+    .imagebox-slider .slides .slick-prev {
+        left: -10px;
+    }
+    .imagebox-slider .slides .slick-next {
+        right: -10px;
+    }
+}

@@ -1,0 +1,1496 @@
+/*
+|-----------------------------------------------------------------------------------------------------------
+| FONTS
+|-----------------------------------------------------------------------------------------------------------
+|
+*/
+/*
+
+Place all custom fonts here for reference
+
+EXAMPLE: REGULAR EXTRA CONDENSED:
+  font-family: "acumin-pro-extra-condensed", Arial, Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+*/
+/*
+|-----------------------------------------------------------------------------------------------------------
+| RESET STYLES
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,center,dl,
+dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
+canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
+time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block; }
+
+body { line-height: 1; }
+
+p ol,
+p ul { list-style: none; }
+
+blockquote,
+q { quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+|-----------------------------------------------------------------------------------------------------------
+| GLOBAL TAG STYLES
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+body {
+    background-color: #f7f9f4;
+    font-family: Arial, Helvetica;
+    color: #3d4543;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;    
+    font-size: 16px;
+    color: #444;
+}
+a,
+a:link,
+a:visited,
+a:focus {
+    border: medium none;
+    font-weight: normal;
+    outline: 0 none;
+    text-decoration: none;
+    color: #c74d28;
+    font-family: inherit;
+    -webkit-transition: color 225ms ease-in-out;
+    -moz-transition: color 225ms ease-in-out;
+    -o-transition: color 225ms ease-in-out;
+    transition: color 225ms ease-in-out;
+}
+a:hover {
+    border: medium none;
+    opacity: 0.98;
+    color: #ce5323;
+    text-decoration: none;
+}
+h1 {
+    color: #ce5323;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 10px auto;
+}
+h2 {
+    color: #222;
+    font-size: 28px;
+    line-height: 1.3em;
+}
+h3 {
+    color: #3d4543;
+    font-size: 26px;
+    line-height: 1em;
+    margin: 10px auto 25px;
+}
+h4 {
+    color: #222;
+    font-size: 24px;
+    line-height: 1em;
+}
+h5 {
+    color: #3d4543;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+h6 {
+    color: #3d4543;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+p {
+    font-family: Arial, Helvetica, serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #2d2d2d;
+    margin: 0 0 20px;
+}
+ul { margin-left: 1.8em; }
+.wrapper img { border: medium none; }
+.wrapper .ui-datepicker select { padding: 0; }
+.ui-datepicker { z-index: 10 !important; }
+.text-cont {
+    position: relative;
+    text-align: center;
+    padding: 100px 0px;    
+}
+.center-align { text-align: center; }
+.title-description {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #939786;
+    font-size: 18px;
+    text-transform: uppercase; 
+    margin-bottom: 60px;       
+}
+.body-copy {
+    color: #343433;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px auto;
+}
+.body-copy a {
+    color: #343433;
+    font-weight: 700;
+}
+.body-copy a {
+    display: inline;
+    background-size: 0% 90%;
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(transparent, transparent 80%, #ffda27 80%);
+    background-image: -o-linear-gradient(transparent, transparent 80%, #ffda27 80%);
+    background-image: -moz-linear-gradient(transparent, transparent 80%, #ffda27 80%);
+    background-image: linear-gradient(transparent, transparent 80%, #ffda27 80%);
+    transition: all ease .5s;
+}
+
+.body-copy a:hover { background-size: 100% 90%; }
+
+.btn-style,
+.btn-style:focus {
+    position: relative;
+    background-color: #ffda27;
+    color: #3d4543;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1em;
+    margin-bottom: 0;
+    padding: 9px 10px;    
+    text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+}
+.btn-style::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;    
+    width: 100%;
+    opacity: 0;    
+    transition: all 0.5s ease 0s;
+}
+.clear {
+    clear: both;
+    line-height: 1px;
+    visibility: hidden;
+}
+body .wrapper .row {
+    max-width: 1100px;
+}
+::-webkit-input-placeholder {
+    color: #c9bea7;
+    opacity: 1;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    
+    color: #c9bea7;
+    opacity: 1;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    color: #c9bea7;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #c9bea7;
+    opacity: 1;
+}
+
+/*---------------------------CORE STYLES---------------------------*/
+
+.core-styles h1,
+.contentRender_name_plugins_core_textbox h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    margin: 15px auto 20px;
+    color: #275d74;
+}
+
+.core-styles h2,
+.contentRender_name_plugins_core_textbox h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 15px auto 20px;
+    color: #55b8d8;
+}
+
+.core-styles h3,
+.contentRender_name_plugins_core_textbox h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 15px auto 20px;
+    color: #2d2d2d;
+}
+
+.core-styles h4,
+.contentRender_name_plugins_core_textbox h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+    margin: 15px auto 20px;
+    color: #2d2d2d;
+}
+
+.core-styles h5,
+.contentRender_name_plugins_core_textbox h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 15px auto 20px;
+    color: #55b8d8;
+}
+
+.core-styles h6,
+.contentRender_name_plugins_core_textbox h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 15px auto 20px;
+    color: #2d2d2d;
+}
+
+.core-styles p,
+.contentRender_name_plugins_core_textbox p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #2d2d2d;
+    margin: 0 0 20px;
+}
+
+.core-styles a,
+.contentRender_name_plugins_core_textbox a {}
+
+.core-styles ul:not([class*="block-grid-"]) li,
+.core-styles ol:not([class*="block-grid-"]) li,
+.contentRender_name_plugins_core_textbox ul:not([class*="block-grid-"]) li,
+.contentRender_name_plugins_core_textbox ol:not([class*="block-grid-"]) li {
+    font-family: Arial, Helvetica, serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #2d2d2d;
+}
+
+.core-styles td,
+.contentRender_name_plugins_core_textbox td,
+.core-styles tr,
+.contentRender_name_plugins_core_textbox tr {
+    font-family: Arial, Helvetica, serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #2d2d2d;
+}
+
+@media (max-width: 1024px) {
+    .core-styles h1,
+    .contentRender_name_plugins_core_textbox h1 {
+        font-size: 50px;
+        line-height: 48px;
+    }
+
+    .core-styles h2,
+    .contentRender_name_plugins_core_textbox h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .core-styles h3,
+    .contentRender_name_plugins_core_textbox h3 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .core-styles h4,
+    .contentRender_name_plugins_core_textbox h4 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .core-styles h5,
+    .contentRender_name_plugins_core_textbox h5 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .core-styles h6,
+    .contentRender_name_plugins_core_textbox h6 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 641px) {
+    .core-styles h1,
+    .contentRender_name_plugins_core_textbox h1 {
+        font-size: 30px;
+        line-height: 36px;
+        margin: 5px auto 10px;
+    }
+
+    .core-styles h2,
+    .contentRender_name_plugins_core_textbox h2 {
+        font-size: 28px;
+        line-height: 30px;
+        margin: 5px auto 10px;
+    }
+
+    .core-styles h3,
+    .contentRender_name_plugins_core_textbox h3 {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 5px auto 10px;
+    }
+
+    .core-styles h4,
+    .contentRender_name_plugins_core_textbox h4 {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 5px auto 10px;
+    }
+
+    .core-styles h5,
+    .contentRender_name_plugins_core_textbox h5 {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 5px auto 10px;
+    }
+
+    .core-styles h6,
+    .contentRender_name_plugins_core_textbox h6 {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 5px auto 10px;
+    }
+
+    .core-styles p,
+    .contentRender_name_plugins_core_textbox p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .core-styles ul:not([class*="block-grid-"]) li,
+    .core-styles ol:not([class*="block-grid-"]) li,
+    .contentRender_name_plugins_core_textbox ul:not([class*="block-grid-"]) li,
+    .contentRender_name_plugins_core_textbox ol:not([class*="block-grid-"]) li {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .core-styles td,
+    .contentRender_name_plugins_core_textbox td,
+    .core-styles tr,
+    .contentRender_name_plugins_core_textbox tr {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+.core-styles img[style*='float: right'],
+.contentRender_name_plugins_core_textbox img[style*='float: right'] { margin-left : 15px; margin-bottom: 5px; }
+.core-styles img[style*='float: left'],
+.contentRender_name_plugins_core_textbox img[style*='float: left'] { margin-right : 15px; margin-bottom: 5px; }
+
+/*---------------------------FORM STYLES---------------------------*/
+/* START RESET FORM STYLING. YOU SHOULDN'T HAVE TO MODIFY ANYTHING TILL CUSTOMIZE SECTION  */
+
+/* The crm-calendar-popup class is added by JS in the header */
+body.crm-calendar-popup  { overflow-y: hidden !important; }
+body.crm-calendar-popup::-webkit-scrollbar { display: none; }
+body.crm-calendar-popup .contentRender { display: none; }
+body.crm-calendar-popup .crm-calendar-parent { padding: 0; margin: 0; background: #fff; }
+body.crm-calendar-popup table { width: 100%; margin-bottom: 0;}
+body.crm-calendar-popup table thead tr th,
+body.crm-calendar-popup table tfoot tr th,
+body.crm-calendar-popup table tfoot tr td,
+body.crm-calendar-popup table tbody tr th,
+body.crm-calendar-popup table tbody tr td,
+body.crm-calendar-popup table tr td {
+    padding: 2px;
+    font-size: 12px;
+}
+body.crm-calendar-popup .lookup-cal,
+body.crm-calendar-popup .lookup-calNav { border: none; }
+body.crm-calendar-popup .lookup-calNav {
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ccc;
+}
+body.crm-calendar-popup .lookup-cal td,
+body.crm-calendar-popup .lookup-calNav td { text-align: center; }
+body.crm-calendar-popup .lookup-close {
+    margin-top: 15px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+/* TARGET CALENDER TRIGGER ON FORMS*/
+.contentRender form.simpleForm a img { margin-bottom: 10px; }
+
+.contentRender form.simpleForm .row textarea,
+.contentRender form.simpleForm .row input { margin-bottom: 10px; }
+.contentRender form.simpleForm .button { display: inline-block; }
+.contentRender form.simpleForm .captcha img,
+.contentRender #sv_submit_event_form img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+.contentRender form.simpleForm .hint,
+.contentRender #sv_submit_event_form .sv_api_hint {
+    display: block;
+    text-align: center;
+}
+.contentRender form.simpleForm .captcha #code,
+.contentRender #sv_submit_event_form #code {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -13px;
+}
+.contentRender form.simpleForm .captcha { overflow: hidden; }
+.contentRender form.simpleForm .captcha #capimage { float: left;  margin-top: 10px; margin-right: 8px; }
+.contentRender form.simpleForm .captcha .hint { margin-top: 10px; }
+.contentRender #sv_submit_event_form .svrecurall *,#sv_submit_event_form #recur_show_1 {
+    -moz-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    -transition: opacity .6s;
+    -webkit-transition: opacity .6s;
+}
+.contentRender #sv_submit_event_form select,
+.contentRender #sv_submit_event_form select[size], #sv_submit_event_form select[multiple],
+.contentRender #sv_submit_event_form input[type=text] { padding: 6px; }
+.contentRender #sv_submit_event_form td:not(:first-child) {
+    padding-left: 0;
+    vertical-align: middle;
+}
+.contentRender #sv_submit_event_form table.fileuploads thead th,
+.contentRender #sv_submit_event_form label.recur_menu,
+.contentRender #sv_submit_event_form legend,
+.contentRender #sv_submit_event_form div.datalabel label {
+    font-weight: normal;
+}
+.contentRender #sv_submit_event_form .progress {
+    background: grey;
+    height: 22px;
+    line-height: 18px;
+}
+.contentRender div#sv_submit_event_form.submitEventForm { padding: 0 !important; }
+.contentRender #sv_submit_event_form .svrecurall *,#sv_submit_event_form #recur_show_1{
+    -moz-transition:all .6s;
+    -o-transition:all .6s;
+    transition:all .6s;
+    -webkit-transition:all .6s;
+}
+.contentRender #sv_submit_event_form #customdate_list {padding: 0 !important; }
+.contentRender #sv_submit_event_form #customdate_list table { margin-bottom: 0; border: 1px solid #ddd; }
+.contentRender #sv_submit_event_form #customdate_list table td,
+.contentRender #sv_submit_event_form #customdate_list table tr { border: none; }
+.contentRender #sv_submit_event_form .recur_opt .detailbar { vertical-align: middle; }
+.contentRender #sv_submit_event_form .recur_opt td {padding: 2px 0;}
+.contentRender #sv_submit_event_form input[type=radio]:checked ~ div.recur_opt { max-height: 100%; }
+.contentRender #sv_submit_event_form #recur_opts_99 { overflow: visible !important; }
+.contentRender #sv_submit_event_form .inner_recur_opt,
+.contentRender #sv_submit_event_form label.recur_menu { margin: 0 1.25em ;}
+.contentRender #sv_submit_event_form .inner_recur_opt { padding: 0 1.25em 0 1.25em; }
+.contentRender #sv_submit_event_form #recur_range {
+    margin: 0 1.25em;
+    padding: 0 1.25em 0 1.25em;
+}
+.contentRender #sv_submit_event_form .inner_recur_opt label {
+    height: 50px;
+    line-height: 46px;
+}
+.contentRender #sv_submit_event_form .inner_recur_opt select {
+    border: none;
+    border-radius: 2px;
+    min-width: 60px;
+    padding-right: 24px;
+}
+.contentRender #sv_submit_event_form .svrecurall input[type=text]:not(#customdate) {
+    border: none;
+    border-radius: 2px;
+}
+.contentRender #sv_submit_event_form .svrecurall #customdate {
+    width: 130px;
+    text-align: center;
+    vertical-align: text-top;
+}
+.contentRender #sv_submit_event_form .svrecurall #customdate_btn {
+    padding: 1px .5rem;
+    vertical-align: text-top;
+}
+
+.contentRender form.simpleForm .formCntrls,
+.contentRender form.simpleForm h3 { text-align: center; }
+@media only screen and (min-width: 40.125em) {
+    .contentRender form.simpleForm p.hint,
+    .contentRender form.simpleForm h3 {
+        padding-left: 8px;
+    }
+    .contentRender form.simpleForm p.hint,
+    .contentRender form.simpleForm .captcha,
+    .contentRender form.simpleForm .formCntrls,
+    .contentRender form.simpleForm h3 {
+        margin-left: 25%;
+        text-align: left !important;
+        width: auto;
+    }
+    .contentRender form.simpleForm .columns p.hint {
+        margin: 8px 0 10px 0;
+        padding-left: 0px;
+    }
+    .contentRender form.simpleForm .captcha img,
+    .contentRender form.simpleForm .captcha #code { margin-left: 0; }
+    .contentRender form.simpleForm .hint { text-align: left; }
+}
+.contentRender form.simpleForm .button,
+.contentRender #sv_submit_event_form input.button,
+.contentRender #sv_submit_event_form .svbtn,
+.contentRender #multifileuploadcontainer label {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    box-shadow: none;
+}
+.contentRender form.simpleForm .button,
+.contentRender #sv_submit_event_form input.button,
+.contentRender #sv_submit_event_form .svbtn,
+.contentRender #multifileuploadcontainer label {
+    border-radius: 0px;
+}
+.contentRender form.simpleForm h3,
+.contentRender #sv_submit_event_form .formhead {
+    background-color: transparent;
+}
+.contentRender form.simpleForm .button,
+.contentRender #sv_submit_event_form input.button,
+.contentRender #sv_submit_event_form .svbtn,
+.contentRender #multifileuploadcontainer label {
+    background: none;
+    border: none;
+}
+.contentRender form.simpleForm div input,
+.contentRender #sv_submit_event_form div input {
+    border-radius: initial;
+}
+/* END RESET */
+
+/* CUSTOMIZE THE FOLLOWING */
+
+/* RESET FONT FAMILY */
+.contentRender #sv_submit_event_form legend,
+.contentRender form.simpleForm label,
+.contentRender form.simpleForm .formtext,
+.contentRender form.simpleForm input,
+.contentRender form.simpleForm select,
+.contentRender #sv_submit_event_form .recur_opt input[type=checkbox] ~ label.minilabel,
+.contentRender #sv_submit_event_form .recur_opt input[type=radio] ~ label.minilabel,
+.contentRender #sv_submit_event_form table.fileuploads thead th,
+.contentRender #sv_submit_event_form select,
+.contentRender #sv_submit_event_form select[size], #sv_submit_event_form select[multiple],
+.contentRender #sv_submit_event_form input[type=text],
+.contentRender #sv_submit_event_form div.datalabel label,
+.contentRender #sv_submit_event_form label.recur_menu {
+    font-family: 'futura-pt', sans-serif;
+}
+/* RESET FONT STYLE */
+.contentRender form.simpleForm .columns label,
+.contentRender form.simpleForm .formtext,
+.contentRender #sv_submit_event_form #customdate_list .formhead,
+.contentRender #sv_submit_event_form table.fileuploads thead th,
+.contentRender #sv_submit_event_form select,
+.contentRender #sv_submit_event_form select[size], #sv_submit_event_form select[multiple],
+.contentRender #sv_submit_event_form input[type=text],
+.contentRender #sv_submit_event_form div.datalabel label {
+    color: #565555;
+    font-size: 18px;
+    line-height: 28px;
+}
+/* OPTIONAL RESET FOR INPUT STYLE */
+/* This over-writes foundation style. Double check your select boxes. You may have to adjust the line-height to vertically center text */
+.contentRender form.simpleForm input,
+.contentRender form.simpleForm select,
+.contentRender #sv_submit_event_form select,
+.contentRender #sv_submit_event_form select[size], #sv_submit_event_form select[multiple],
+.contentRender #sv_submit_event_form input[type=text] {
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #c74d28;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+/* REPLACE WITH A CORE STYLE HEADING */
+.contentRender form.simpleForm h3,
+.contentRender #sv_submit_event_form .formhead {
+    color: #509e2f;
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: 'mrs-eaves', serif;
+    font-style: italic;
+}
+/* SET KEY COLOR HERE */
+.contentRender #sv_submit_event_form .recur_opt input[type=checkbox]:checked ~ label,
+.contentRender #sv_submit_event_form .recur_opt input[type=radio]:checked ~ label,
+.contentRender #sv_submit_event_form #recur_range input[type=checkbox]:checked ~ label,
+.contentRender #sv_submit_event_form #recur_range input[type=radio]:checked ~ label,
+.contentRender #sv_submit_event_form input[type=radio]:checked ~ label.recur_menu,
+.contentRender #sv_submit_event_form .progress {
+    border: none;
+    background-color: #509e2f;
+    /*height: 40px;
+    line-height: 40px;
+    font-size: 18px;*/
+    color: #fff;
+    /*padding: 0 45px;
+    margin-bottom: 20px;*/
+}
+/* STRONG WEIGHT FOR LABELS */
+.contentRender #sv_submit_event_form #customdate_list .formhead,
+.contentRender #sv_submit_event_form legend {
+    font-weight: 600;
+    font-size: 25px;
+}
+/* STYLE SUBMIT BUTTONS */
+.contentRender form.simpleForm .button,
+.contentRender #sv_submit_event_form input.button,
+.contentRender #sv_submit_event_form .svbtn,
+.contentRender #multifileuploadcontainer label {
+    background-color: #dc582a !important;
+    width: auto;
+    margin: 0;
+    color: #fff;
+}
+.contentRender form.simpleForm .button:hover,
+.contentRender form.simpleForm .button:active,
+.contentRender #sv_submit_event_form input.button:hover,
+.contentRender #sv_submit_event_form input.button:active,
+.contentRender #sv_submit_event_form .svbtn:hover,
+.contentRender #sv_submit_event_form .svbtn:active,
+.contentRender #multifileuploadcontainer label:hover,
+.contentRender #multifileuploadcontainer label:active {
+    opacity: 0.8;
+}
+/* SET LINK COLOR HERE */
+body.crm-calendar-popup .contentRender a, body.crm-calendar-popup .contentRender a:hover {
+    /*
+        This is a generic link style for the calendar popup.
+
+        It's recommended you test the calendar popup but you might wanna limit your style here to color and family.
+        The font size should be able to work across all sites.
+    */
+    /*font-size: 1.0625rem;
+    font-style: normal;*/
+}
+/* OPTIONAL: SET FORM HINT STYLE HERE */
+.contentRender #sv_submit_event_form .hint,
+.contentRender form.simpleForm p.hint:not(.formreq) {
+    /* Default styling here. Changing is optional */
+    /*color: #5b5b5b;
+    font-size: 14px;*/
+}
+/* OPTIONAL: SET FORM REQUIRED STYLE HERE */
+.contentRender #sv_submit_event_form div.datalabel label.svformreq,
+.contentRender form.simpleForm label.formreq {
+    /*color: #d81111;*/
+}
+/* SUBMIT EVENT FORM PIKA CALENDAR */
+/* To test, click on the start date in a submit event form */
+.pika-lendar .is-today .pika-button {
+    /*
+        Set a link color here. This can be standard site anchor color
+    */
+}
+.pika-lendar .pika-button:hover,
+.pika-lendar .is-selected .pika-button {
+    /*
+        Set your hover/selected background and text color here.
+        Note the Pika calendar uses important here so this is required to overwrite.
+    */
+    /*color: #fff;
+    background: #a49483 !important;
+    border-radius: 0 !important;
+    box-shadow: none;*/
+}
+/*---------------------------END FORM STYLES---------------------------*/
+
+/*
+|-----------------------------------------------------------------------------------------------------------
+| HEADER SECTION
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+.header-section {
+    position: relative;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+.header-section:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+    background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.header-section .section-top { height: 40px; }
+.header-section .section-top-lower {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    vertical-align: top;
+}
+.header-section .section-main-nav {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+.header-section .top-nav-cont {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 3;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c3826+0,2c281b+33 */
+    background: #4c3826; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #4c3826 0%, #2c281b 33%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #4c3826 0%,#2c281b 33%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #4c3826 0%,#2c281b 33%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c3826', endColorstr='#2c281b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    height: 130px;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+}
+.show-sub .header-section .top-nav-cont {
+    background-color: rgba(16, 22, 34, 0.96);
+    box-shadow: 0 0 0 0 #101622;
+    height: 70px;
+}
+.header-section .top-nav-cont .top-header .top-header-left {
+    position: relative;
+    float: left;
+}
+.header-section .top-nav-cont .top-header .top-header-right {
+    float: right;
+    text-align: center;
+}
+.header-section .top-nav-cont .top-header .top-header-right .top-cont { position: relative; }
+.header-section .top-nav-cont { cursor: pointer; }
+.header-section .top-nav-cont .top-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #939786;
+    padding: 8px 12px;
+}
+.header-section .top-nav-cont .top-cont .fa {
+    font-size: 18px;
+    line-height: 1;
+    margin-left: 0;
+    position: relative;
+    top: -3px;
+    vertical-align: middle;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+} 
+.header-section .top-nav-cont .top-cont span { font-family: "acumin-pro-extra-condensed", Arial, Helvetica; }
+.header-section .top-nav-cont .fa { display: inline-block; }
+.header-section .top-header-right .top-dd {
+    position: absolute;
+    top: 55px;
+    z-index: 20001;
+    background-color: #fff;
+    display: none;
+    width: 220px;
+    min-height: 50px;
+    padding: 10px;    
+    transform-origin: 100% 0 0;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, .4);    
+}
+.header-section .top-header-right .top-dd.active { display: block; }
+.header-section .top-header-right .top-dd ul {
+    padding: 0;
+    margin: 0;
+}
+.header-section .top-header-right .top-dd li {
+    float: left;
+    list-style: outside none none;
+    text-align: left;
+    width: 50%;
+}
+.header-section .top-header-right .top-dd li a {
+    display: block;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #756b5e;
+    text-align: left;
+    text-transform: none;
+    padding: 8px 10px;
+}
+.header-section .top-header-right .top-dd li a:hover {
+    color: #c74d28;
+}
+.header-section .nav-marker {
+    position: relative;
+    left: -3px;
+    z-index: 20002;
+    background: url('../includes/public/assets/images/nav-marker.png') no-repeat bottom center;
+    width: 36px;
+    height: 30px;
+    display: none;
+}
+.header-section .active .nav-marker { display: block; 
+}
+.header-section .weather-cont,
+.header-section .weather-cont .weather-icon,
+.header-section .weather-cont .weather-text,
+.header-section .ind-nav-cont,
+.header-section .ind-nav-cont a,
+.header-section .search-cont {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #939786;
+    vertical-align: middle;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.header-section .weather-cont {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    float: left;
+    text-align: right;
+    vertical-align: middle;
+    width: 60%;
+}
+.header-section .top-header-right .weather-cont .nav-marker {
+    top: 5px;
+    left: 55px;
+}
+.header-section .weather-cont .weather-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    font-weight: 300;
+    color: #fff;
+}
+.header-section .weather-cont .weather-text span { font-family: "acumin-pro-extra-condensed", Arial, Helvetica; }
+.header-section .weather-cont .weather-icon {
+    margin-right: 2px;
+    width: 32px;
+    height: 25px;
+}
+.header-section .weather-cont .fa {
+    display: inline-block;
+    -webkit-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.header-section .weather-cont.active .fa-angle-down {
+    transform: rotate(180deg);
+}
+.header-section .top-dd.weather-dd {
+    right: 0;
+    top: 67px;
+    min-width: 500px;
+    padding: 20px 20px 10px;    
+    width: 100%;
+    text-align: center;
+}
+.header-section .weather-dd.active { display: block; }
+.header-section .weather-dd .weather-inner {
+    position: relative;
+    color: #fff;
+    padding: 3px 0 0;    
+}
+.header-section .weather-dd .item {
+    font-family: "acumin-pro-extra-condensed", Arial, Helvetica;
+    float: left;
+    width: 28%;
+    min-height: 145px;
+    border-right: 1px solid #cdcdcd;
+    padding: 0 20px;
+}
+.header-section .weather-dd .item.last { border: 0 none; 
+}
+.header-section .weather-dd .title {
+    font-size: 22px;
+    color: #c9bea7;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.header-section .weather-dd .text {
+    color: #756b5e;
+    display: inline-block;
+    font-size: 26px;
+    line-height: 1;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+}
+.header-section .weather-dd .icon {
+    display: inline-block;
+    float: left;
+    width: 36px;
+}
+.header-section .weather-dd .low-temp { margin-top: 20px; }
+.header-section .weather-dd .item-current { width: 44%; }
+.header-section .weather-dd .item-current .text .temp {
+    position: relative;
+    top: -8px;
+    font-size: 50px;
+}
+.header-section .weather-dd .item-current .icon { width: auto; }
+.header-section .weather-dd .item-current .cond {
+    font-family: "acumin-pro-extra-condensed", Arial, Helvetica;
+    font-size: 22px;
+    color: #756b5e;
+    text-transform: none;
+}
+.header-section .weather-dd .more-link { margin: 20px 0; }
+.header-section .weather-dd .more-link a {
+    font-family: "acumin-pro-extra-condensed", Arial, Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ce5323;
+    width: 100%;
+    text-align: center;
+}
+.header-section .search-mobile {    
+    position: absolute;
+    right: 11px;
+    top: 9px;
+    float: right;
+}
+.header-section .logo {
+    position: relative;
+    top: 15px;
+    z-index: 20003;
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease 0s;
+}
+.header-section .logo a {
+    position: relative;
+    z-index: 10;
+    left: 10px;
+}
+.top-header,
+.header-section .logo { float: left; }
+.top-header { padding-top: 25px; }
+.header-section .logo img {
+    max-width: 170px;
+    padding-top: 10px;
+    padding-left: 0px;
+}
+/*
+|-----------------------------------------------------------------------------------------------------------
+| BODY SECTION
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+.body-section {
+    position: relative;
+    left: 0;    
+    top: 0;
+    width: 100%;
+}
+.body-section h1 {
+    text-align: left;
+    font-weight: 700;
+    line-height: 100%;
+}
+.body-section .sub-title {
+    color: #3d4543;
+    font-family: "acumin-pro-extra-condensed", Arial, Helvetica;
+    font-size: 32px;
+    line-height: 1em;
+    margin: 0px auto 15px;
+    text-align: center;
+}
+.body-section .intro-panel { padding: 40px 150px; }
+.body-section .intro-panel h1 { text-align: center; }
+.body-section .intro-text p {
+    color: #343433;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.body-section .maincont { padding: 0px; }
+.withheader .body-section .maincont { padding-top: 110px; }
+
+.panel-one-col,
+.panel-two-col-right,
+.panel-two-col-left,
+.panel-two-col-even { display: block; }
+
+.panel-two-col-right,
+.panel-two-col-left,
+.panel-two-col-even { padding-top: 40px; }
+
+.panel-flex { display: flex; }
+.flex1,
+.flex2 {
+    flex: 1 1 0;
+    overflow: hidden;
+    position: relative;
+}
+.flex1 { flex: 1.5 1 0; }
+
+/*
+|-----------------------------------------------------------------------------------------------------------
+| FOOTER SECTION
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+.footer-section {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+.footer-section .footer-top {
+    position: relative;
+    background-color: #2C281B;
+    border-top: 1px solid #fff;
+    width: 100%;
+    min-height: 200px;
+    padding: 35px 0;    
+}
+.footer-section .section-footer-nav-main {
+    text-align: left;
+    padding: 0 15px;
+}
+.footer-section .footer-address {
+    font-family: Arial, Helvetica, serif;
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    line-height: 1.4;
+}
+.footer-address a {
+    font-family: Arial, Helvetica, serif;
+    font-weight: 700;
+    color: #fff;
+}
+.footer-section .footer-row {
+    padding: 0;
+    text-align: left;
+    box-sizing: border-box;
+}
+.footer-section .copyright {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+}
+.footer-section .sv-logo {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 0px;
+}
+.footer-section .sv-logo {
+    text-align: center;
+    padding-right: 0;
+}
+.footer-section .sv-logo a {
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.footer-section .sv-logo a img { padding-top: 5px; }
+
+a.to-top-button {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99999;
+    background-color: #2c281b;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    pointer-events: auto;
+    transition: opacity ease .5s;
+}
+
+/*
+|-----------------------------------------------------------------------------------------------------------
+| Social LInks Widget -  Relocate to widget template during build
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+.social-buttons {
+    margin: 20px auto 15px;
+    position: relative;
+    text-align: left;
+    width: auto;
+}
+.social-buttons .social-icon {
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.social-buttons .social-icon.last { margin-right: 0; }
+.social-buttons .social-icon a .fa {
+    line-height: 1;
+    vertical-align: middle;
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.social-buttons .social-icon a:hover .fa { color: #ce5323; 
+}
+
+/*
+|-----------------------------------------------------------------------------------------------------------
+| MEDIA QUERIES
+|-----------------------------------------------------------------------------------------------------------
+*/
+/*** Mobile ***/
+
+@media only screen and (max-width: 40em) {
+    h1 {
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    h5 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+
+    /*
+    |------------------------
+    | HEADER SECTION
+    |------------------------
+    */
+
+    .header-section .top-nav-cont {
+        height: 90px;
+    }
+    .header-section .logo img {
+        max-width: 160px;
+        padding-left: 0;
+    }
+
+    
+    /*
+    |------------------------
+    | BODY SECTION
+    |------------------------
+    */
+
+    .body-section .intro-panel {
+        padding: 0px 30px;
+    }
+    .body-section .intro-text p,
+    .body-section .content-main,
+    .body-section .content-main a,
+    .body-section .content-main ul,
+    .body-section .intro-text a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .body-section h1 {
+        font-size: 34px;
+        margin-bottom: 25px;
+        padding-bottom: 0px;
+    }
+    
+    .body-section,
+    .body-section .maincont { padding: 0; }
+    .body-section { margin-top: 0; }
+
+    /*
+    |------------------------
+    | FOOTER SECTION
+    |------------------------   
+    */
+    
+    .footer-section {
+        margin-top: 0px;
+    }
+    .footer-section .footer-logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer-section .footer-logo img { max-width: 200px; }
+    .footer-section .footer-row,
+    .footer-section .sv-logo { text-align: center; }
+    .footer-row {
+        padding: 0 10px 0;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .footer-section .footer-top {
+        margin: 0px auto 0;
+        padding: 0 10px;
+    }
+    .footer-section .footer-address { text-align: center; }
+    .footer-section .copyright {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    .footer-section .sv-logo {
+        width: auto;
+        float: none;
+    }
+    .social-buttons { text-align: center; }
+    .social-buttons .social-icon {
+        width: 15%;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+/*** Tablet and Desk***/
+
+@media only screen and (min-width: 40.063em) {
+    /*
+    |------------------------
+    | HEADER SECTION
+    |------------------------
+    */
+    /*
+    |------------------------
+    | BODY SECTION
+    |------------------------
+    */
+
+    .body-section .sub-title { margin: 10px auto 25px; }
+
+    /*
+    |------------------------
+    | FOOTER SECTION
+    |------------------------   
+    */
+}
+
+/*** Tablet ***/
+
+@media only screen and (min-width: 40.063em) and (max-width: 1024px) {
+    p { font-size: 16px; }
+
+    a,
+    a:link,
+    a:visited,
+    a:focus {} body .wrapper .panel-two-col-even.row,
+    body .wrapper .content-main {
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+    /*
+  |------------------------
+  | HEADER SECTION
+  |------------------------
+  */
+    
+    .header-section .top-nav-cont { height: 90px; }
+    .header-section .top-nav-cont .top-header .top-header-right { width: 60%; }
+    .header-section .weather-cont {
+        min-width: 80px;
+        width: 25%;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .header-section .top-header-right .weather-cont .nav-marker {
+        left: 20px;
+        top: 12px;
+    }
+    .header-section .weather-cont .weather-text,
+    .header-section .mobilenav .trip-lang { display: none; }
+    
+    /*
+    |------------------------
+    | BODY SECTION
+    |------------------------
+    */
+    
+    .body-section { margin-top: 0px; }
+    .body-section .intro-panel { padding: 30px 80px 20px; }
+    
+    /*
+    |------------------------
+    | FOOTER SECTION
+    |------------------------ */
+    
+    .footer-section .sv-logo,
+    .footer-section .copyright {
+        float: none;
+        text-align: left;
+    }
+}
+
+/*** Desktop ***/
+
+@media only screen and (min-width: 64.063em) {
+    h1,
+    .title1,
+    .title1 a { font-size: 72px; }
+    h2,
+    .title2,
+    .title2 a { font-size: 52px; }
+    h3,
+    .title3,
+    .title3 a { font-size: 42px; }
+    h4,
+    .title4,
+    .title4 a { font-size: 36px; }
+    h5,
+    .title5,
+    .title5 a { font-size: 30px; }
+    h6,
+    .title6,
+    .title6 a { font-size: 24px; }
+
+    .collapse { padding: 0 !important; }
+
+    /*
+    |------------------------
+    | HEADER SECTION
+    |------------------------
+    */
+    
+    .top-header { padding-top: 50px; }
+
+    .header-section .logo { top: 30px; }
+    .header-section .logo img {
+        max-width: 290px;
+        padding-left: 38px;
+    }
+
+    /*
+    |------------------------
+    | BODY SECTION
+    |------------------------
+    */
+    
+    .panel_custom_two_col .content-right,
+    .panel_custom_two_col .content-main {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /*
+    |------------------------
+    | FOOTER SECTION
+    |------------------------
+    */
+    
+    .footer-section .copyright {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .footer-section .sv-logo {
+        width: auto;
+        padding-top: 5px;
+        padding-right: 20px;
+        text-align: right; 
+    }
+}

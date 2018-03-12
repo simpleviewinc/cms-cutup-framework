@@ -1,0 +1,94 @@
+/*
+|-----------------------------------------------------------------------------------------------------------
+| HOMEPAGE SLIDESHOW SECTION
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+.header-slideshow { height: 100%; }
+.header-slideshow .home-header { }
+.header-slideshow .home-header .slick-slide {
+    position: relative;
+    width: 100%;
+}
+.header-slideshow .home-header img { 
+    width:100%;
+    height:auto !important;
+}
+
+.header-slideshow .home-header .item { position: relative; }
+
+.header-slideshow .home-header .item img { width: 100%; }
+
+.header-slideshow .arrow-cont {
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    z-index: 9;
+    width: 100%;    
+    transform:translate(-50%,-50%);
+}
+
+.header-slideshow .slick-prev,
+.header-slideshow .slick-next {
+    position:absolute;
+    top:50%;    
+    background-color:transparent;   
+    width:55px;
+    height:50px;
+    padding:0px;    
+    border:none;
+    transform:translateY(-50%);
+    cursor: pointer;
+}
+.header-slideshow .slick-prev { left:0px; }
+.header-slideshow .home-header .slick-next { right:0px; }
+
+/**** DOTS ****/
+
+.header-slideshow ul.slick-dots {
+    position:absolute;
+    bottom:0px;
+    height:97px;
+    width:100%;
+    margin:0px;
+    text-align:center;
+    padding:0px;
+    list-style:none;
+}
+.header-slideshow ul.slick-dots li {    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display:inline-block;
+}
+.header-slideshow ul.slick-dots li button {
+    background-color:transparent!important;
+    width:16px;
+    height:16px;
+    font-size:0px;
+    padding:0px;
+    margin:0px 8px 0px 8px; 
+    border:2px #fff solid;  
+    border-radius:50%;  
+    vertical-align: top;
+}
+.header-slideshow ul.slick-dots li.slick-active button { background-color: #fff !important; 
+}
+/**** END DOTS ****/
+
+@media only screen and (min-width: 1025px) {
+    .header-slideshow .home-header,
+    .header-slideshow .home-header .item { height: 800px; }
+}
+
+@media only screen and (max-width: 40em) { 
+    .header-slideshow .slick-prev, 
+    .header-slideshow .slick-next { width: 40px; }
+    .header-slideshow .home-header { min-height: 180px; }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 1024px) {
+    .header-slideshow .home-header { height: 400px; }
+}
+
+@media only screen and (min-width: 40.063em) {}

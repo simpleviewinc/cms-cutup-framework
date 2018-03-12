@@ -1,0 +1,93 @@
+/* Booking */
+.booking {
+    text-align: center;
+    background-color: #c74d28;
+}
+@media only screen and (max-width: 64em) {
+    .booking {
+        margin-bottom: 30px;
+    }
+}
+.booking .title {
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.booking .title i.fa {
+    display: none;
+    font-size: 28px;
+    line-height: 20px;
+    margin-left: 5px;
+}
+@media only screen and (min-width: 40em) {
+    .booking form {
+        display: block !important;
+    }
+}
+@media only screen and (max-width: 40em) {
+    .booking .title {
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .booking .title i.fa {
+        display: inline-block;
+        font-size: 18px;
+    }
+    .booking form {
+        display: none;
+    }
+}
+.booking input {
+    display: block;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    border: none;
+    color: #c9bea7;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url(/includes/public/assets/images/listings/fa-calendar.png);
+}
+.booking input::-webkit-input-placeholder {
+    color: #c9bea7;
+}
+.booking input::-moz-placeholder {
+    color: #c9bea7;
+}
+.booking input:-ms-input-placeholder {
+    color: #c9bea7;
+}
+.booking input:-moz-placeholder {
+    color: #c9bea7;
+}
+.booking button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    line-height: 38px;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media only screen and (max-width: 40em) {
+    .booking button {
+        width: auto;
+        padding: 0 15px;
+    }
+}

@@ -1,0 +1,113 @@
+/*
+|-----------------------------------------------------------------------------------------------------------
+| Social Hub Widget 
+|-----------------------------------------------------------------------------------------------------------
+*/
+.social-wrap {
+    background-color: #d1debc;
+    background-image: url("../includes/public/assets/images/mountains-bg.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    padding: 70px 0 140px;
+}
+.social-cont {
+    position: relative;
+    min-height: 500px;
+}
+
+.social-header {
+    position: relative; 
+    z-index: 2;    
+    text-align: left;
+    width: 100%;
+    max-width: 1039px;
+    margin: 0 auto 6px; 
+}
+.social-header .color-head { padding: 6px 20px; }
+.social-header .title1 { display: inline-block; }
+
+.social-hit {
+    height: 90%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.social-popup {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    z-index: 1;
+}
+.social-popup.active {
+    opacity: 1;
+    z-index: 99;
+}
+
+    
+.social-hub-cont .title {font-size: 22px;}
+
+.social-tabs {
+    float: left;
+    width: 100%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.social-tabs .tab-container,
+.tab-content-container { width: 100%; }
+
+.social-tabs .tab-container .data-tab {
+    position: absolute; 
+    right: 76px;
+    top: 0;
+    float: left; 
+    display: inline-block;
+    padding: 20px 22px;
+    font-size: 34px;
+    color: #fff;    
+    border-left: 6px solid #f5f8f1;
+    text-transform: uppercase;
+    width: auto;
+    z-index: 2;
+    cursor: pointer;
+}
+.social-tabs .tab-container .data-tab.facebook { 
+    padding: 20px 27px; 
+    right: 0;
+}
+.social-tabs .tab-container .data-tab.facebook.open {
+    background-color: #6ece49;
+    background-image: none;
+}
+.social-tabs .tab-container .data-tab.instagram.open {
+    background-color: #6ece49;
+    background-image: none;
+}
+
+.social-tabs .tab-container .tab-content {display: none;}
+.social-tabs .tab-container .tab-content.open {display: block;}
+
+.social-tabs .tab-container .tab-content.facebook {
+    background: url('../includes/public/assets/images/facebook-bg.jpg') no-repeat 0 0;
+    background-size: cover;
+    min-height: 500px;
+}
+
+/*** Tablet ***/ 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+}
+
+/*** Tablet and Desk***/ 
+@media only screen and (min-width: 40.063em){}
+
+/*** Desktop ***/ 
+@media only screen and (min-width: 64.063em) {
+
+}
+
+
