@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simpleville CVB Cutup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/includes/public/assets/images/favicon.ico" type="image/x-icon">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <link href="css/foundation.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css">
+    <link href="css/shared.css" rel="stylesheet" type="text/css">
+    <link href="css/search.css" rel="stylesheet" type="text/css">
+    <link href="css/slideshow-int.css" rel="stylesheet" type="text/css">
+    <link href="css/nav-shared.css" rel="stylesheet" type="text/css">
+    <link href="css/custom_layout.css" rel="stylesheet" type="text/css">
+    <link href="css/shared-form.css" rel="stylesheet" type="text/css">
+
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript"  src="js/foundation.reveal.js"></script>
+    <script type="text/javascript" src="js/foundation.equalizer.js"></script>
+    <script type="text/javascript" src="js/jquery.onscreen.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
+
+    <!-- CUSTOM FONTS CODE -->
+    <script src="https://use.typekit.net/aat5zve.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+    <div class="wrapper"> 
+        <!-- ///// HEADER INCLUDE ///// -->
+        <div w3-include-html="header.html"></div>
+
+        <!-- //////  HEADER SLIDESHOW //////// -->
+        <div class="header-slideshow-int">
+            <div class="imgcont">
+                <img src="includes/public/assets/images/interior-header.jpg" />
+            </div>      
+        </div>
+        
+        <!-- //////  BODY  //////// -->
+        <section class="body-section">        
+            <div class="row">
+                <div class="large-12 columns">
+                    <h1>Simpleville Hotels &amp; Motels</h1>
+                </div>
+                <div class="large-12 columns">
+                    <p>Find your perfect Simpleville hotel using the listings on this page. With everything from full-service resorts to budget-friendly motels, you'll find the perfect room or suite for your Southern Arizona vacation in Sonoran Desert.</p>
+                    <p>Search for a full service beach resort complete with spa and swimming pools, or take a leisurely stroll through one of the many hiking trails. Simpleville offers pet-friendly hotels, as well as hotels within walking distance to shopping, dining, entertainment, and a number of southwestern attractions. Start planning your dream vacation today.</p>
+                </div>
+            </div>
+            
+            <div class="panel-one-col">                    
+                <!-- START LISTINGS -->
+                <div class="listings shared-list" data-guid="{{guid}}">
+                    
+                    <div class="shared-filter">
+                        <form class="shared-form">
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <div class="title">
+                                        <span>
+                                            Search Filters
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="medium-6 columns">
+                                            <select class="shared-select">
+                                                <option value>Category</option>
+                                                <option>Category 1</option>
+                                                <option>Category 2</option>
+                                                <option>Category 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="medium-6 columns">
+                                            <select class="shared-select">
+                                                <option value>Location</option>
+                                                <option>Location 1</option>
+                                                <option>Location 2</option>
+                                                <option>Location 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="medium-6 columns">
+                                            <div class="amenities-button">
+                                                Amenities
+                                            </div>
+                                        </div>
+                                        <div class="large-12 columns mobile-amenities-container">
+                                            <!-- use jquery to move .amenities here on mobile -->
+                                        </div>
+                                        <div class="medium-6 columns">
+                                            <div class="row">
+                                                <div class="medium-8 columns">
+                                                    <input class="shared-input" type="text" placeholder="Keyword Search...">
+                                                </div>
+                                                <div class="medium-4 columns">
+                                                    <button class="button">
+                                                        <span>
+                                                            Search
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="large-12 columns desktop-amenities-container">
+                                            <div class="amenities">
+                                                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            Amenity 1
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            Amenity 2
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            Amenity 3
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            Amenity 4
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            Amenity 5
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            Amenity 6
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div><!--shared-filter-->
+                    
+                    <div class="shared-map">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <div data-gMapContainer>
+                                    <div data-mapHolder>
+                                        <img class="temp" src="https://maps.googleapis.com/maps/api/staticmap?center=Tucson&size=1070x440&key=AIzaSyClfmeVYnucjNz1PtshwwWFrQzuqLOSmyM">
+                                    </div>
+                                    <button data-openMap>
+                                        View Map
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                    <button data-closeMap>
+                                        Close Map
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--shared-map-->
+                    
+                    <div class="shared-sort-pager top">
+                        <div class="row">
+                            <div class="medium-4 columns">
+                                <div class="sort">
+                                    <span class="title">Show Results:</span>
+                                    <a href="#6" class="selected">6</a><!--
+                                    --><a href="#12">12</a><!--
+                                    --><a href="#24">24</a>
+                                </div>
+                            </div>
+                            <div class="medium-4 columns">
+                                <div class="sort text-center">
+                                    <span class="title">Sort By:</span>
+                                    <a href="#recommended" class="selected">Recommended</a><!--
+                                    --><a href="#distance">Distance</a>
+                                </div>
+                            </div>
+                            <div class="medium-4 columns">
+                                <div class="pager">
+                                    <a href="#first" class="disabled">
+                                        <i class="fa fa-angle-double-left"></i>
+                                    </a>
+                                    <a href="#previous"  class="disabled">
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                    </a>
+                                    <span class="current">1-6</span>
+                                    <span class="of">Of</span>
+                                    <span class="total">23</span>
+                                    <a href="#first">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#last">
+                                        <i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--shared-sort-pager-->
+                    
+                    <div class="shared-items">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <ul class="small-block-grid-1 medium-block-grid-2">
+                                    
+                                    <li class="double-wide">
+                                        <div class="item dtn" data-type="listing" data-recid="{{recid}}" data-seo-listing data-seo-title="{{%title}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}">
+                                            <div class="row" data-equalizer>
+                                                <div class="large-8 columns" data-equalizer-watch>
+                                                    <a class="image-container">
+                                                        <div class="featured-tag">
+                                                            Featured
+                                                        </div>
+                                                        <div class="color-slide">
+                                                            <img src="includes/public/assets/images/listings/list1-img.jpg">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="large-4 columns" data-equalizer-watch>
+                                                    <div class="details-container">
+                                                        <div class="title">
+                                                            <a class="map-pin"></a>
+                                                            <a href="#">Doubletree Hilton Hotel</a>
+                                                        </div>
+                                                        <div class="description">
+                                                            DoubleTree Suites by Hilton Hotel Tucson - Williams Center, is conveniently located in mid-town Tucson, Arizona, and is ideal for leisure travelers and families...
+                                                            <br>
+                                                            <a class="read-more" href="#read-more"><span>Read more</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="empty"></li>
+                                    
+                                    <li class="double-wide">
+                                        <div class="item dtn">
+                                            <div class="row" data-equalizer>
+                                                <div class="large-8 columns" data-equalizer-watch>
+                                                    <a class="image-container">
+                                                        <div class="featured-tag">
+                                                            Featured
+                                                        </div>
+                                                        <div class="color-slide">
+                                                            <img src="includes/public/assets/images/listings/list2-img.jpg">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="large-4 columns" data-equalizer-watch>
+                                                    <div class="details-container">
+                                                        <div class="title">
+                                                            <a class="map-pin"></a>
+                                                            <a href="#">Hotel Congress</a>
+                                                        </div>
+                                                        <div class="description">
+                                                            Something is happening all the time, but yet, the rooms offer an opportunity to slow down by going back in time: the rooms, while thankfully offering the modern necessity of air conditioning...
+                                                            <br>
+                                                            <a class="read-more" href="#read-more"><span>Read more</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="empty"></li>
+                                    
+                                    <li>
+                                        <div class="item" data-type="listing" data-recid="{{recid}}" data-seo-listing data-seo-title="{{%title}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}">
+                                            <a class="image-container">
+                                                <div class="color-slide">
+                                                    <img src="includes/public/assets/images/listings/list3-img.jpg">
+                                                </div>
+                                            </a>
+                                            <div class="details-container">
+                                                <div class="title">
+                                                    <a class="map-pin"></a>
+                                                    <a href="#">Westin La Paloma</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item">
+                                            <a class="image-container">
+                                                <div class="color-slide">
+                                                    <img src="includes/public/assets/images/listings/list4-img.jpg">
+                                                </div>
+                                            </a>
+                                            <div class="details-container">
+                                                <div class="title">
+                                                    <a class="map-pin"></a>
+                                                    <a href="#">Red Lion Inn &amp; Suites</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item">
+                                            <a class="image-container">
+                                                <div class="color-slide">
+                                                    <img src="includes/public/assets/images/listings/list5-img.jpg">
+                                                </div>
+                                            </a>
+                                            <div class="details-container">
+                                                <div class="title">
+                                                    <a class="map-pin"></a>
+                                                    <a href="#">Ritz Carlton</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item">
+                                            <a class="image-container">
+                                                <div class="color-slide">
+                                                    <img src="includes/public/assets/images/listings/list6-img.jpg">
+                                                </div>
+                                            </a>
+                                            <div class="details-container">
+                                                <div class="title">
+                                                    <a class="map-pin"></a>
+                                                    <a href="#">JW Marriot Starrpass</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--shared-items-->
+                    
+                    <div class="shared-sort-pager bottom">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <div class="pager">
+                                    <a href="#first" class="disabled">
+                                        <i class="fa fa-angle-double-left"></i>
+                                    </a>
+                                    <a href="#previous"  class="disabled">
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                    </a>
+                                    <span class="current">1-6</span>
+                                    <span class="of">Of</span>
+                                    <span class="total">23</span>
+                                    <a href="#first">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#last">
+                                        <i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--shared-sort-pager-->
+                
+                </div><!--shared-list-->
+                
+                <script>
+                    var root = $('[data-guid="{{guid}}"]');
+                    
+                    $(document).foundation();
+                    
+                    root.on('click', '.amenities-button', function() {
+                        $(this).toggleClass('open');
+                        root.find('.amenities').slideToggle();
+                        return false;
+                    });
+                    
+                    root.on('click', '[data-openMap], [data-closeMap]', function() {
+                        root.toggleClass('map-open');
+                        return false;
+                    });
+                    
+                    var booking = $('[data-guid="booking"]');
+                    var bookingForm = booking.find('form');
+                    var bookingInputs = bookingForm.find('input');
+                    var bookingToggle = booking.find('.title');
+                    bookingInputs.datepicker();
+                    bookingToggle.click(function() {
+                        if(Foundation.utils.is_small_only()) {
+                            bookingForm.slideToggle();
+                        }
+                        return false;
+                    });
+                    
+                    var interiorNav = $('[data-guid="interior-nav"]');
+                    var toggle = interiorNav.find('.toggle');
+                    var menu = interiorNav.find('.menu');
+                    var submenuButtons = interiorNav.find('.open-submenu');
+                    toggle.click(function() {
+                        menu.slideToggle();
+                        return false;
+                    });
+                    submenuButtons.click(function() {
+                        var button = $(this);
+                        var submenu = button.next('ul');
+                        button.toggleClass('open');
+                        submenu.slideToggle(function() {
+                            submenu.toggleClass('open');
+                        });
+                        return false;
+                    });
+                    
+                </script>
+                <!-- END LISTINGS -->
+                    
+            </div><!--panel-one-col-->
+        </section><!--body-section-->
+            
+        <!-- /////  FOOTER INCLUDE  ////// -->
+    <div w3-include-html="footer.html"></div>
+
+</div>
+
+<!-- !!!!!!!!!!!! DO NOT USE THIS FILE FOR SHELL SETUP !!!!!!!!!!!! -->
+<script type="text/javascript" src="js/w3.js"></script>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+<script type="text/javascript" src="js/nav.js"></script>
+
+<script type="text/javascript">
+
+    //Weather 
+
+    $('body').on('click', '[data-sv-weathercont]', function() {
+        $('[data-sv-weatherdd]').toggleClass('active');
+        $('[data-sv-weathercont]').toggleClass('active');
+    });
+
+    //Search specific 
+
+     $('body').on('click', '[data-sv-sitesearch-icon]', function() {
+        $('[data-sv-sitesearchdd]').toggleClass('active');
+    });
+     $('body').on('click','[data-sv-sitesearchdd]', function() {
+        $(this).toggleClass('active');
+    });
+     $('body').on('click','[data-sv-sitesearchmobile]', function() {
+        $('[data-sv-sitesearchddmobile]').toggleClass('active');
+    });
+     $('body').on('click','[data-sv-searchclosemobile]', function() {
+        $('[data-sv-sitesearchddmobile]').toggleClass('active');
+    });
+    
+</script>
+
+</body>
+</html>

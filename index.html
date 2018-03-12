@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Simpleville CVB Cutup</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/includes/public/assets/images/favicon.ico" type="image/x-icon" />
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link href="css/foundation.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link href="css/shared.css" rel="stylesheet" type="text/css" />
+    <link href="css/search.css" rel="stylesheet" type="text/css" />
+    <link href="css/slideshow.css" rel="stylesheet" type="text/css" />
+    <link href="css/collections.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav-shared.css" rel="stylesheet" type="text/css" />
+    <link href="css/social.css" rel="stylesheet" type="text/css" />
+    <link href="css/shared-form.css" rel="stylesheet" type="text/css" />
+
+    <script src="//code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript"  src="js/foundation.reveal.js"></script>
+    <script type="text/javascript" src="js/foundation.equalizer.js"></script>
+    <script type="text/javascript" src="js/jquery.onscreen.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>    
+
+    <!-- CUSTOM FONTS CODE -->
+    <script src="https://use.typekit.net/aat5zve.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+<body>
+
+<div class="wrapper homepage"> 
+
+    <!-- ///// HEADER INCLUDE ///// -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- //////  HEADER  SLIDESHOW //////// -->
+
+    <section class="header-slideshow">
+        <div class="home-header">
+            <div class="item">
+                <img src="includes/public/assets/images/header-slideshow1.jpg" />
+            </div>
+            <div class="item">
+                <img src="includes/public/assets/images/header-slideshow2.jpg" />
+            </div>
+            <div class="item">
+                <img src="includes/public/assets/images/header-slideshow3.jpg" />
+            </div>
+        </div>      
+    </section>
+
+    <script>
+        $(document).ready(function(){
+            $('.home-header').slick({
+                infinite: true,
+                arrows: true,
+                dots: true,
+                autoplay: true,
+                fade: true,
+                prevArrow: '<div class="arrow-cont"><div type="button" data-role="none" class="slick-prev" aria-label="previous"><img src="includes/public/assets/images/arrow-prev.png"/></div></div>',
+                nextArrow: '<div class="arrow-cont"><div type="button" data-role="none" class="slick-next" aria-label="next"><img src="includes/public/assets/images/arrow-next.png"/></div></div>'
+            });
+
+            $(window).on('resize orientationchange', function() {
+                $('.home-header').slick('resize');
+            });
+
+        });
+    </script>   
+
+    <!-- //////  BODY  //////// -->
+    <section class="body-section">
+        <div class="maincont">        
+            <div class="panel-one-col controlled-width"> <!-- .controlled-width class is a toggle for all panels -->
+                <div class="row">
+                    <div class="intro-panel large-12 columns">
+                        <h1>Visit Sunny Simpleville</h1>
+                        <div class="sub-title"> Where the unparalleled meets the unexpected </div>
+                        <div class="intro-text">
+                            <p>Calling all travelers, the free thinker and the free at heart. Discover a place where you can explore without boundaries. Our natural landscape draws visitors outdoors where there is plenty of room to roam. A bit off the beaten path, Tucson’s unique attractions and accommodations beckon you to discover and explore and our arts and culture scene make Tucson a place that’s authentic and comfortable.                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-two-col-right controlled-width">
+                <div class="row">
+                    <div class="columns small-12 medium-8">
+                        <div class="imagebox-float clearfix">
+                            <div class="img-cont small-12 medium-4">
+                                <img src="includes/public/assets/images/content/old-tucson.jpg">
+                            </div>
+                            <div class="content small-12 medium-8">
+                                <div class="title">Imagebox Float Title</div>
+                                <div class="desc">Imagebox Float Description ... <a href="/">Link</a></div>
+                            </div>
+                        </div>
+                        <div class="imagebox-wide clearfix">
+                            <a href="/">
+                                <img src="includes/public/assets/images/content/tucson-pretty.jpg">                       
+                                <div class="title">Imagebox Wide Title</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="columns small-12 medium-4">
+                        <div class="imagebox">
+                            <a href="/">
+                                <div class="img-cont4">
+                                    <img src="includes/public/assets/images/content/sunset.jpg">
+                                </div>
+                                <div class="title">
+                                    Imagebox Title
+                                </div>
+                                <div class="desc">
+                                    Imagebox description copy
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-one-col controlled-width">
+                <div class="row">
+                    <div class="columns small-12">
+                        <div class="imagebox-slider">
+                            <div class="slides">
+                                <div class="slide">
+                                    <img src="includes/public/assets/images/content/slide1.jpg">
+                                    <div class="title">
+                                        Slide 1 Title
+                                    </div>
+                                    <div class="desc">
+                                        Slide 1 Description Text
+                                    </div>
+                                    <a href="/" class="button"><span>See More <i class="fa fa-angle-right"></i></span></a>
+                                </div>
+                                <div class="slide">
+                                    <img src="includes/public/assets/images/content/slide2.jpg">
+                                    <div class="title">
+                                        Slide 2 Title
+                                    </div>
+                                    <div class="desc">
+                                        Slide 2 Description Text
+                                    </div>
+                                    <a href="/" class="button"><span>See More <i class="fa fa-angle-right"></i></span></a>
+                                </div>
+                                <div class="slide">
+                                    <img src="includes/public/assets/images/content/slide3.jpg">
+                                    <div class="title">
+                                        Slide 3 Title
+                                    </div>
+                                    <div class="desc">
+                                        Slide 3 Description Text
+                                    </div>
+                                    <a href="/" class="button"><span>See More <i class="fa fa-angle-right"></i></span></a>
+                                </div>
+                                <div class="slide">
+                                    <img src="includes/public/assets/images/content/slide4.jpg">
+                                    <div class="title">
+                                        Slide 4 Title
+                                    </div>
+                                    <div class="desc">
+                                        Slide 4 Description Text
+                                    </div>
+                                    <a href="/" class="button"><span>See More <i class="fa fa-angle-right"></i></span></a>
+                                </div>
+                                <div class="arrow-cont"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $('.imagebox-slider .slides').slick({
+                        infinite: true,
+                        arrows: true,
+                        dots: false,
+                        autoplay: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        prevArrow: '<div class="arrow-cont"><div type="button" data-role="none" class="slick-prev" aria-label="previous"><i class="fa fa-arrow-left"></i></div></div>',
+                        nextArrow: '<div class="arrow-cont"><div type="button" data-role="none" class="slick-next" aria-label="next"><i class="fa fa-arrow-right"></i></div></div>'
+                    });
+
+                    $(window).on('resize orientationchange', function() {
+                        $('.home-header').slick('resize');
+                    });
+
+                });
+            </script>  
+        </div>
+    </section>
+
+    <!-- /////  FOOTER INCLUDE  ////// -->
+    <div w3-include-html="footer.html"></div>
+
+</div>
+
+<!-- !!!!!!!!!!!! DO NOT USE THIS FILE FOR SHELL SETUP !!!!!!!!!!!! -->
+<script type="text/javascript" src="js/w3.js"></script>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+<script type="text/javascript" src="js/nav.js"></script>
+
+<script type="text/javascript">
+
+    //Weather 
+    
+    $('body').on('click', '[data-sv-weathercont]', function() {
+        $('[data-sv-weatherdd]').toggleClass('active');
+        $('[data-sv-weathercont]').toggleClass('active');
+    });
+
+    //Search specific 
+
+     $('body').on('click', '[data-sv-sitesearch-icon]', function() {
+        $('[data-sv-sitesearchdd]').toggleClass('active');
+    });
+     $('body').on('click','[data-sv-sitesearchdd]', function() {
+        $(this).toggleClass('active');
+    });
+     $('body').on('click','[data-sv-sitesearchmobile]', function() {
+        $('[data-sv-sitesearchddmobile]').toggleClass('active');
+    });
+     $('body').on('click','[data-sv-searchclosemobile]', function() {
+        $('[data-sv-sitesearchddmobile]').toggleClass('active');
+    });
+    
+</script>
+
+</body>
+</html>
