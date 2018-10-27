@@ -95,8 +95,6 @@ a.button:before,
 	opacity: 0;
 	background-color: #c74d28;
 	transform: translate(-50%,-50%) scale(0);
-	-ms-transform: translate(-50%,-50%) scale(0);
-	-webkit-transform: translate(-50%,-50%) scale(0);
 	transition: all ease .5s;
 }
 button.button:hover:before,
@@ -104,8 +102,6 @@ a.button:hover:before,
 .button:hover:before {
 	opacity: 1;
 	transform: translate(-50%,-50%) scale(1);
-	-ms-transform: translate(-50%,-50%) scale(1);
-	-webkit-transform: translate(-50%,-50%) scale(1);
 }
 button.button > span,
 a.button > span,
