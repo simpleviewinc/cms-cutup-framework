@@ -13,7 +13,7 @@
 
 .nav-primary nav > .item {
     position: relative;
-	display: inline-block;
+    display: inline-block;
     height: 50px;
     margin: 0 22px 0 0;    
 }
@@ -40,9 +40,7 @@
     width: 100px;
     height: 30px;
     display: none;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 .nav-primary .item:last-child .nav-marker { width: 50px; }
 
@@ -77,7 +75,7 @@
 }
 
 .nav-primary .dropdown .item a {
-	color: #c74d28;
+    color: #c74d28;
     display: block;
     font-family: 'acumin-pro-extra-condensed', Arial, sans-serif;
     font-size: 26px;
@@ -102,8 +100,7 @@
     color: #ce5323;    
 }
 .nav-primary .dropdown .item > .arrow .fa {
-    -webkit-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .nav-primary .dropdown .item.active > .arrow .fa { 
     transform: rotate(-180deg); 
@@ -113,8 +110,7 @@
     height: 0;
     opacity: 0;
     padding: 0 10px 0 20px;
-    -webkit-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
         
 }
 .nav-primary .dropdown .item.active .dd {
@@ -300,10 +296,7 @@
     display: block; 
     height: 25px;
     opacity: 0; 
-    -webkit-transition: opacity 225ms ease-in-out;
-       -moz-transition: opacity 225ms ease-in-out;
-         -o-transition: opacity 225ms ease-in-out;
-            transition: opacity 225ms ease-in-out;
+    transition: opacity 225ms ease-in-out;
 }
 .header-section .mobilenav.active .nav-marker { opacity: 1; }
 
@@ -315,10 +308,7 @@
     background-color: #fff;
     opacity: 0;
     padding-bottom: 20px;
-    -webkit-transition: opacity 225ms ease-in-out;
-       -moz-transition: opacity 225ms ease-in-out;
-         -o-transition: opacity 225ms ease-in-out;
-            transition: opacity 225ms ease-in-out;
+    transition: opacity 225ms ease-in-out;
 }
 
 .mobilenav .mobile-dd.active { 
@@ -389,8 +379,7 @@
     height: 100%;
     line-height: 44px;
      width: 40px;
-    -webkit-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .mobilenav ul.nav-list li .active .fa-angle-down { 
     transform: rotate(-180deg); 
