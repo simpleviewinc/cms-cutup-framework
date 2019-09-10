@@ -50,7 +50,7 @@
 
 
 // Wait for when header and footer load, then attach javaScript event listeners
-// DO NOT USE THIS FILE FOR SHELL SETUP
+// DO NOT USE THIS CODE FOR SHELL SETUP
 // Replace this code with document.ready
 
 // header loaded
