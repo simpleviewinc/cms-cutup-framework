@@ -47,3 +47,18 @@
         $nav.addClass('no-scroll');
         $('body').removeClass('nav-open');
     }
+
+
+// Wait for when header and footer load, then attach javaScript event listeners
+// DO NOT USE THIS CODE FOR SHELL SETUP
+// Replace this code with document.ready
+
+// header loaded
+document.addEventListener("headerImported", function(event){
+    console.log("header loaded")
+})
+
+// footer loaded
+document.addEventListener("footerImported", function(event){
+    console.log("footer loaded")
+})
