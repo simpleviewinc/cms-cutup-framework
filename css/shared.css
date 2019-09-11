@@ -77,8 +77,7 @@ body {
 }
 a,
 a:link,
-a:visited,
-a:focus {
+a:visited {
     border: medium none;
     font-weight: normal;
     outline: 0 none;
@@ -93,6 +92,16 @@ a:hover {
     color: #ce5323;
     text-decoration: none;
 }
+
+/* Focus styling for accessibility; you can restyle this
+as long as it differentiates the focused elements */
+a:focus,
+.btn-style:focus,
+button:focus,
+*:focus {
+    outline: 1px solid rgba(77, 144, 254, 1);
+}
+
 h1 {
     color: #ce5323;
     font-size: 40px;
@@ -185,8 +194,7 @@ ul { margin-left: 1.8em; }
 
 .body-copy a:hover { background-size: 100% 90%; }
 
-.btn-style,
-.btn-style:focus {
+.btn-style {
     position: relative;
     background-color: #ffda27;
     color: #3d4543;
