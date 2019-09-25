@@ -5,6 +5,96 @@
 |-----------------------------------------------------------------------------------------------------------
 */
 
+/* accessible buttons to toggle dropdowns for tabbing */
+.sr_only {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    background-color: transparent;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@supports (clip-path: inset(50% 50% 50% 50%)) {
+    .sr_only {
+        clip: auto;
+        clip-path: inset(50% 50% 50% 50%);
+    }
+}
+
+.sr_only:focus,
+.sr_only:active,
+.sr_only:hover {
+    background-color: transparent;
+}
+
+.nav-industry {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+
+.nav-industry .ind-item {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.nav-industry .ind-item .item-inner {
+    position: relative;
+}
+
+.nav-industry .ind-item a {
+    font-size: 20px;
+}
+
+.nav-industry .ind-item .nav-dropdown {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    display: none;
+    background-color: #fff;
+}
+
+.nav-industry .ind-item.active .nav-dropdown {
+    display: block;
+}
+
+.nav-industry .ind-item:hover .nav-dropdown {
+    display: block;
+}
+
+.nav-industry .ind-item .nav-dropdown .item > ul {
+    display: none;
+}
+
+.nav-industry .ind-item .nav-dropdown .item.active > ul {
+    display: block;
+}
+
+.nav-industry .ind-item .nav-dropdown .item:hover > ul {
+    display: block;
+}
+
+.nav-primary {
+    display: flex;
+}
+
+.nav-primary .primary-item {
+    padding: 20px 10px;
+}
+
+.nav-primary .primary-item .item-inner {
+    position: relative;
+}
+
+.nav-primary .primary-item a {
+    font-size: 30px;
+}
 
 
 /*

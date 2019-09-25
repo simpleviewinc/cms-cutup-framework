@@ -1,16 +1,20 @@
 /* ******************* SEARCH BOX ******************* */
 .header-section .search-cont {
+    position: absolute;
     background-color: #c74d28;
     border: 1px solid #fff;
     cursor: pointer;
     height: 45px;
     padding-top: 10px;
-    position: relative;
     right: 45px;
     text-align: center;
     top: -5px;
     vertical-align: top;
     width: 45px;
+}
+
+.header-section .search-cont.desktop {
+    display: none;
 }
 
 .header-section .search-cont .arrow-right {
@@ -227,6 +231,10 @@
   margin: 10px 0 0 10px;
 }
 
+@media only screen and (min-width: 1025px){
+    
+}
+
 /* ******************* MEDIA QUERIES ******************* */
 
 /*** Mobile ***/
@@ -264,9 +272,12 @@
     background-color: transparent;
     border: 0 none;
     padding-top: 6px;
-    float: right;
     width: 15%;
   }
+
+  .header-section .search-cont.desktop {
+    display: none;
+    }
 
   .site-search-box {
     display: inline-block !important;

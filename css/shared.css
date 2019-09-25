@@ -780,7 +780,40 @@ body.crm-calendar-popup .contentRender a, body.crm-calendar-popup .contentRender
 |-----------------------------------------------------------------------------------------------------------
 */
 
+.top-nav-cont {
+    display: flex;
+    justify-content: space-between;
+}
 
+.header-right {
+    display: none;
+}
+
+.header-right .header-top {
+    position: relative;
+}
+
+.header-right .header-top .header-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.header-right .header-top .header-top-right button {
+    padding: 5px;
+}
+
+@media only screen and (min-width: 1025px){
+    .header-right {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .mobilenav {
+        display: none;
+    }
+}
 
 /*
 |-----------------------------------------------------------------------------------------------------------
