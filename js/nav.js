@@ -45,8 +45,8 @@ document.addEventListener("headerImported", function (event) {
             var activatingA = $(el).children(".item-inner").children("a")
             
             var dropdown = $(el).children(".item-inner").next();
-            dropdown.attr("id", activatingA.text() + "-dd")
-            var btn = "<button class='sr_only' aria-label='toggle submenu for " + activatingA.text() + "' aria-controls='" + activatingA.text() + "-dd'></button>";
+            dropdown.attr("id", "child-" + i + "-dropdown")
+            var btn = "<button class='sr_only' aria-label='toggle submenu for " + activatingA.text() + "' aria-controls='child-" + i + "-dropdown'></button>";
             activatingA.after(btn);
 
             $(el).find("button").click(function(e){

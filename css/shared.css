@@ -781,6 +781,7 @@ body.crm-calendar-popup .contentRender a, body.crm-calendar-popup .contentRender
 */
 
 .top-nav-cont {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }

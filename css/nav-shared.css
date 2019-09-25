@@ -96,6 +96,38 @@
     font-size: 30px;
 }
 
+.nav-primary .primary-item .nav-dropdown {
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    max-width: 1100px;
+    right: 50%;
+    transform: translateX(50%);
+    top: 100%;
+    display: none;
+    background-color: #fff;
+}
+
+.nav-primary .primary-item:hover .nav-dropdown {
+    display: block;
+}
+
+.nav-primary .primary-item.active .nav-dropdown {
+    display: block;
+}
+
+.nav-primary .primary-item .nav-dropdown .item > ul {
+    display: none;
+}
+
+.nav-primary .primary-item .nav-dropdown .item.active > ul {
+    display: block;
+}
+
+.nav-primary .primary-item .nav-dropdown .item:hover > ul {
+    display: block;
+}
+
 
 /*
 |-----------------------------------------------------------------------------------------------------------
